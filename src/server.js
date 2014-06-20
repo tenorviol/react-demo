@@ -6,6 +6,7 @@ var IndexView = require('../template/IndexView');
 var port = 3000;
 
 var app = express();
+app.use(express.static(__dirname + '/../public'));
 
 app.get('/', function(req, res){
   var props = {

@@ -51,3 +51,16 @@ Run the server using supervisor so it will pick up any changes we make to our co
 and check out the result at [localhost:3000](http://localhost:3000/).
 
     ./node_modules/.bin/supervisor src/server.js
+
+If we're going to run our react code client side,
+we will need to get the javascript code client side as well.
+We'll use browserify to package up the necessary code into a single javascript file.
+
+    mkdir public/js
+    ./node_modules/.bin/watchify src/client.js -o public/js/client.js
+
+Once the application has been reloaded with this client.js file,
+you will be able to output new aphorisms from the console with:
+
+    showNewAphorism()
+
