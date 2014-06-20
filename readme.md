@@ -39,3 +39,9 @@ Meanwhile the example [jsx/IndexView.js](jsx/IndexView.js) composes AphorismView
         );
       }
     });
+
+Jsx templates can be compiled into javascript using the command line tool, jsx.
+With the `--watch` directive,
+jsx will run each time a file is changed in the source directory.
+
+    ./node_modules/.bin/jsx --watch jsx template

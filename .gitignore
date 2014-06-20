@@ -1,3 +1,9 @@
+### App specific ignores
+
+# The template dir is generated from jsx
+/template/
+
+
 ### https://github.com/github/gitignore/blob/master/Node.gitignore
 
 # Logs
