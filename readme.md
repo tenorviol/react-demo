@@ -12,3 +12,7 @@ and created the function `getRandom()`.
 Test this out by running from the command line:
 
     ./bin/random-aphorism.js
+
+Use npm to install react, react tools, express, supervisor and watchify.
+
+    npm install --save react react-tools express supervisor watchify
