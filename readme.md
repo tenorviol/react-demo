@@ -45,3 +45,9 @@ With the `--watch` directive,
 jsx will run each time a file is changed in the source directory.
 
     ./node_modules/.bin/jsx --watch jsx template
+
+Templates can be rendered server side using `React.renderComponentToString(View(properties))`.
+Run the server using supervisor so it will pick up any changes we make to our code,
+and check out the result at [localhost:3000](http://localhost:3000/).
+
+    ./node_modules/.bin/supervisor src/server.js
